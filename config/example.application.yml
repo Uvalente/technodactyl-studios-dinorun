@@ -2,7 +2,6 @@
 
 POSTGRES_USER: <your-psql-username>
 POSTGRES_PASSWORD: <your-psql-password>
-POSTGRES_HOST: <your-psql-host>
 
 POSTGRES_DEVELOPMENT_DB: dinorun_development
 POSTGRES_TEST_DB: dinorun_test

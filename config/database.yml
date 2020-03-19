@@ -5,7 +5,6 @@ default: &default
   password: <%= ENV['POSTGRES_PASSWORD'] %>
   pool: 5
   timeout: 5000
-  host: <%= ENV['POSTGRES_HOST'] %>
 
 development:
   <<: *default
