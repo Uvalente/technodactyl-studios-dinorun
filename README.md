@@ -1,25 +1,39 @@
-# technodactyl-studios-dinorun
+# Dinorun by Technodactyl Studios
+
+Dinorun is a side-scrolling platform game, with auto-generated level from the analysis of a user-provided audio.  
+It's built as a Single Page App, with a responsive design and the possibility of playing with the touchscreen on phone or tablet devices.  
+The level scores are stored in the database, and the top three for the level played, are displayed on the end screen.
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting started
 
-Things you may want to cover:
+Fork this repo, and clone it to your local machine, then cd to it.
 
-* Ruby version
+In the command line run:
+```bash
+bundle
+yarn
+```
 
-* System dependencies
+Create a `application.yml` file in the `config` folder, following the provided `example.application.yml` file, replacing user and password placeholders to your PostgreSQL credentials.
 
-* Configuration
+Then run:
 
-* Database creation
+```bash
+rails db:create
+rails db:migrate
+```
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+To run the app, use `rails s`, then navigate to `http://localhost:3000/`
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Running tests
 
-* ...
+To run the test use `rspec` from the command line, or launch the app with `rails s`, then navigate to `http://localhost:3000/jasmine`
+
+
+## Game flow
+
+![Game Flow](game-flow.jpg)
